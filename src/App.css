@@ -4124,19 +4124,154 @@ body::before {
     min-width: 0 !important;
   }
 }
+/* =========================
+   MOBILE LAYOUT FIXED
+   ========================= */
+
 @media (max-width: 768px) {
-  .services-grid {
+  .services-grid,
+  .products-grid,
+  .testimonials-grid,
+  .why-choose-intro,
+  .why-choose-proof,
+  .pricing-intro-bar,
+  .public-sector-grid,
+  .stats-expert,
+  .trust-bar {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    background: rgba(255, 0, 0, 0.15) !important;
+    gap: 12px !important;
   }
 
-  .products-grid {
+  .premium-pricing-grid {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    background: rgba(0, 255, 0, 0.15) !important;
+    gap: 16px !important;
   }
 
-  .testimonials-grid {
+  .hero-features,
+  .panel-grid {
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    background: rgba(0, 0, 255, 0.15) !important;
+    gap: 12px !important;
+  }
+
+  .hero-proof-mini,
+  .dashboard-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .phone-info-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .phone-info-card.full {
+    grid-column: 1 / -1 !important;
+  }
+
+  .hero-content,
+  .technology-layout,
+  .app-preview,
+  .ultra-cta-box,
+  .vehicle-types-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .hero-text h1 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+  }
+
+  .hero-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  .hero-actions .btn {
+    width: auto !important;
+    min-width: 160px !important;
+    text-align: center !important;
+  }
+
+  .premium-plan {
+    padding: 20px 16px !important;
+  }
+
+  .premium-plan .price {
+    font-size: 26px !important;
+  }
+
+  .dashboard-map {
+    min-height: 270px !important;
+  }
+
+  .vehicle-type-card img {
+    height: 230px !important;
+  }
+
+  .footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .footer-links {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 18px !important;
+    width: 100% !important;
+  }
+
+  .footer-links > div {
+    min-width: 140px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .services-grid,
+  .products-grid,
+  .testimonials-grid,
+  .why-choose-intro,
+  .why-choose-proof,
+  .pricing-intro-bar,
+  .public-sector-grid,
+  .stats-expert,
+  .trust-bar,
+  .premium-pricing-grid,
+  .hero-features,
+  .panel-grid,
+  .hero-proof-mini,
+  .dashboard-stats,
+  .phone-info-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+  }
+
+  .footer-links {
+    flex-direction: column !important;
+  }
+
+  .footer-links > div {
+    min-width: 0 !important;
   }
 }
