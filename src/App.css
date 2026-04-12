@@ -3215,10 +3215,10 @@ body::before {
     0 0 18px rgba(255, 106, 0, 0.12);
 }
 /* =========================
-   MOBILE RESCUE LAYER
+   MOBILE DESKTOP-LIKE LAYER
    ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .site {
     overflow-x: hidden;
   }
@@ -3229,9 +3229,9 @@ body::before {
     right: 10px;
     width: auto;
     max-width: none;
-    padding: 12px 14px;
-    border-radius: 16px;
-    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    gap: 14px;
   }
 
   .brand-row {
@@ -3241,12 +3241,12 @@ body::before {
   }
 
   .brand-logo {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
   }
 
   .brand-name {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .brand-subtitle {
@@ -3259,6 +3259,21 @@ body::before {
     display: none;
   }
 
+  .section,
+  .technology-premium,
+  .app-preview,
+  .urgency-section,
+  .footer,
+  .footer-bottom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
   .hero {
     min-height: auto;
     padding-top: 92px;
@@ -3266,9 +3281,9 @@ body::before {
 
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 28px;
     min-height: auto;
-    padding: 44px 20px 36px;
+    padding: 58px 16px 44px;
   }
 
   .hero-text {
@@ -3282,36 +3297,33 @@ body::before {
   }
 
   .hero-text h1 {
-    font-size: 30px;
-    line-height: 1.08;
+    font-size: 38px;
+    line-height: 1.06;
     word-break: break-word;
   }
 
   .hero-description {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.75;
     margin-top: 16px;
   }
 
   .hero-hook {
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.65;
     margin-top: 14px;
   }
 
   .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 22px;
   }
 
-  .hero-actions .btn,
-  .btn-block,
-  .smart-cta-button,
-  .cta-main-btn,
-  .public-sector-btn {
-    width: 100%;
+  .hero-actions .btn {
+    width: auto;
+    min-width: 170px;
     text-align: center;
   }
 
@@ -3325,39 +3337,10 @@ body::before {
     padding: 7px 10px;
   }
 
-  .hero-features,
-  .panel-grid,
-  .hero-proof-mini,
-  .services-grid,
-  .stats-expert,
-  .trust-bar,
-  .vehicle-types-grid,
-  .technology-layout,
-  .dashboard-stats,
-  .app-preview,
-  .products-grid,
-  .pricing-intro-bar,
-  .premium-pricing-grid,
-  .public-sector-grid,
-  .why-choose-intro,
-  .why-choose-proof,
-  .testimonials-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .feature-card,
-  .service-card,
-  .product-card,
-  .testimonial-card,
-  .faq-item,
-  .technology-benefit,
-  .app-benefit-card,
-  .why-proof-card,
-  .why-choose-intro-box,
-  .pricing-intro-item,
-  .public-sector-item,
-  .dashboard-mini-card {
-    padding: 18px;
+  .hero-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
   }
 
   .hero-panel,
@@ -3371,32 +3354,27 @@ body::before {
     border-radius: 24px;
   }
 
-  .ultra-panel h2,
-  .technology-text h2,
-  .app-text h2,
-  .section-heading h2,
-  .urgency-box h2 {
-    font-size: 28px;
-    line-height: 1.12;
+  .panel-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .section,
-  .technology-premium,
-  .app-preview,
-  .urgency-section,
-  .footer,
-  .footer-bottom {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .section {
-    padding-top: 68px;
-    padding-bottom: 68px;
+  .hero-proof-mini {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .section-heading {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
+  }
+
+  .section-heading h2,
+  .technology-text h2,
+  .app-text h2,
+  .urgency-box h2,
+  .cta-left h2,
+  .ultra-panel h2 {
+    font-size: 30px;
+    line-height: 1.1;
   }
 
   .section-heading p,
@@ -3408,43 +3386,60 @@ body::before {
   .premium-testimonial p,
   .faq-item p {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.75;
   }
 
   .stats-expert {
-    padding: 8px 20px 40px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px 16px 42px;
     gap: 12px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
   }
 
   .trust-bar {
-    padding: 0 20px 36px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 16px 38px;
     gap: 12px;
   }
 
+  .vehicle-types-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .vehicle-type-card img {
-    height: 220px;
+    height: 240px;
   }
 
   .technology-premium {
-    padding-top: 76px;
-    padding-bottom: 76px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  .technology-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
   }
 
   .technology-dashboard {
-    padding: 16px;
-    border-radius: 24px;
+    padding: 18px;
+    border-radius: 26px;
   }
 
   .dashboard-map {
-    min-height: 260px;
-    border-radius: 18px;
+    min-height: 290px;
+    border-radius: 20px;
   }
 
   .dashboard-header {
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    font-size: 11px;
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    font-size: 12px;
     gap: 8px;
   }
 
@@ -3464,20 +3459,28 @@ body::before {
   }
 
   .mini-map {
-    min-height: 110px;
+    min-height: 115px;
   }
 
   .dashboard-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
+  }
+
+  .app-preview {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
 
   .phone-frame {
     width: 100%;
-    max-width: 310px;
+    max-width: 320px;
   }
 
   .phone-screen {
-    min-height: 520px;
+    min-height: 530px;
   }
 
   .phone-map-area {
@@ -3485,11 +3488,41 @@ body::before {
   }
 
   .phone-info-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .phone-info-card.full {
-    grid-column: auto;
+    grid-column: 1 / -1;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .product-card,
+  .service-card,
+  .feature-card,
+  .testimonial-card,
+  .faq-item,
+  .technology-benefit,
+  .app-benefit-card,
+  .why-proof-card,
+  .why-choose-intro-box,
+  .pricing-intro-item,
+  .public-sector-item,
+  .dashboard-mini-card {
+    padding: 18px;
+  }
+
+  .pricing-intro-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .premium-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
   .premium-plan {
@@ -3518,47 +3551,64 @@ body::before {
   }
 
   .comparison-table {
-    gap: 12px;
+    gap: 10px;
   }
 
   .comparison-row {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 8px;
   }
 
   .comparison-row > div {
-    text-align: left;
     padding: 12px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .comparison-row > div:first-child {
-    font-weight: 700;
+  .public-sector-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .why-choose-intro {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .why-choose-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .urgency-box {
+    padding: 42px 22px;
+    border-radius: 26px;
   }
 
   .ultra-cta-box {
     grid-template-columns: 1fr;
     gap: 22px;
-    padding: 22px 18px;
-    border-radius: 24px;
-  }
-
-  .cta-left h2 {
-    font-size: 24px;
+    padding: 24px 20px;
+    border-radius: 26px;
   }
 
   .cta-benefits {
-    flex-direction: column;
-    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .cta-benefits span {
-    width: 100%;
+    width: auto;
   }
 
   .cta-extra {
-    flex-direction: column;
-    gap: 6px;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-between;
   }
 
   .smart-cta-bar {
@@ -3567,9 +3617,9 @@ body::before {
   }
 
   .smart-cta-content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
     padding: 14px;
     border-radius: 16px;
   }
@@ -3582,9 +3632,14 @@ body::before {
     font-size: 12px;
   }
 
+  .smart-cta-button {
+    width: auto;
+    text-align: center;
+  }
+
   .footer {
-    margin-top: 56px;
-    padding-top: 34px;
+    margin-top: 58px;
+    padding-top: 36px;
     padding-bottom: 24px;
     gap: 24px;
     border-radius: 24px 24px 0 0;
@@ -3608,13 +3663,14 @@ body::before {
   }
 
   .footer-links {
-    flex-direction: column;
-    gap: 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
   }
 
   .footer-links > div {
-    min-width: 0;
+    min-width: 140px;
   }
 
   .footer-links a {
@@ -3636,8 +3692,137 @@ body::before {
 
   .whatsapp-float {
     right: 14px;
-    bottom: 84px;
+    bottom: 82px;
     padding: 12px 14px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-features,
+  .services-grid,
+  .products-grid,
+  .testimonials-grid,
+  .why-choose-intro,
+  .why-choose-proof,
+  .pricing-intro-bar,
+  .public-sector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-proof-mini {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-expert,
+  .trust-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .premium-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row > div {
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .comparison-row > div:first-child {
+    font-weight: 700;
+  }
+
+  .phone-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-info-card.full {
+    grid-column: auto;
+  }
+
+  .smart-cta-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .smart-cta-button {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-links > div {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-content {
+    padding: 52px 14px 38px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .section,
+  .technology-premium,
+  .app-preview,
+  .urgency-section,
+  .footer,
+  .footer-bottom {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .vehicle-type-card img {
+    height: 210px;
+  }
+
+  .dashboard-map {
+    min-height: 250px;
+  }
+
+  .phone-frame {
+    max-width: 300px;
+  }
+
+  .premium-plan .price {
+    font-size: 24px;
+  }
+
+  .cta-left h2,
+  .section-heading h2,
+  .technology-text h2,
+  .app-text h2,
+  .urgency-box h2 {
+    font-size: 26px;
   }
 }
