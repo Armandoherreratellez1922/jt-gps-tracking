@@ -3902,3 +3902,19 @@ body::before {
     font-size: 26px;
   }
 }
+@media (max-width: 768px) {
+  body {
+    outline: 6px solid red !important;
+  }
+
+  .services-grid,
+  .products-grid,
+  .testimonials-grid,
+  .premium-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .hero-text h1 {
+    font-size: 20px !important;
+  }
+}
