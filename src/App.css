@@ -4082,21 +4082,27 @@ body::before {
 }
 
 @media (max-width: 520px) {
-  .hero-features,
-  .panel-grid,
-  .hero-proof-mini,
   .services-grid,
-  .stats-expert,
-  .trust-bar,
   .products-grid,
-  .pricing-intro-bar,
-  .premium-pricing-grid,
-  .public-sector-grid,
+  .testimonials-grid,
   .why-choose-intro,
   .why-choose-proof,
-  .testimonials-grid,
-  .dashboard-stats,
+  .pricing-intro-bar,
+  .public-sector-grid,
+  .stats-expert,
+  .trust-bar,
+  .premium-pricing-grid,
+  .hero-features,
+  .panel-grid,
   .phone-info-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .hero-proof-mini,
+  .dashboard-stats {
+    display: grid !important;
     grid-template-columns: 1fr !important;
   }
 
