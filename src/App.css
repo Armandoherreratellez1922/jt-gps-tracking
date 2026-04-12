@@ -3903,34 +3903,31 @@ body::before {
   }
 }
 /* =========================
-   MOBILE OVERRIDE FINAL
+   MOBILE REFINEMENT BY SECTION
    ========================= */
 
 @media (max-width: 768px) {
-  .hero-content,
-  .technology-layout,
-  .app-preview,
-  .ultra-cta-box {
+  /* HERO */
+  .hero-content {
     grid-template-columns: 1fr !important;
-    gap: 24px !important;
+    gap: 26px !important;
+    padding: 54px 16px 40px !important;
   }
 
-  .services-grid,
-  .products-grid,
-  .testimonials-grid,
-  .why-choose-intro,
-  .why-choose-proof,
-  .pricing-intro-bar,
-  .public-sector-grid,
-  .stats-expert,
-  .trust-bar {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
+  .hero-text h1 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
   }
 
-  .premium-pricing-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 14px !important;
+  .hero-actions {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  .hero-actions .btn {
+    width: auto !important;
+    min-width: 160px !important;
   }
 
   .hero-features {
@@ -3947,9 +3944,52 @@ body::before {
     gap: 10px !important;
   }
 
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  /* STATS + TRUST */
+  .stats-expert,
+  .trust-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  /* VEHÍCULOS */
+  .vehicle-types-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .vehicle-type-card img {
+    height: 230px !important;
+  }
+
+  /* TECNOLOGÍA */
+  .technology-layout {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .technology-dashboard {
+    padding: 18px !important;
+  }
+
+  .dashboard-map {
+    min-height: 270px !important;
+  }
+
   .dashboard-stats {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     gap: 10px !important;
+  }
+
+  /* APP */
+  .app-preview {
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
   }
 
   .phone-info-grid {
@@ -3960,94 +4000,69 @@ body::before {
     grid-column: 1 / -1 !important;
   }
 
-  .comparison-row {
-    grid-template-columns: 1.4fr 1fr 1fr 1fr !important;
-    gap: 8px !important;
+  /* PRODUCTOS */
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
   }
 
-  .hero-content {
-    padding: 54px 16px 40px !important;
+  /* PLANES */
+  .pricing-intro-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
   }
 
-  .section,
-  .technology-premium,
-  .app-preview,
-  .urgency-section,
-  .footer {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
-  .hero-text h1 {
-    font-size: 34px !important;
-    line-height: 1.08 !important;
-  }
-
-  .hero-description {
-    font-size: 15px !important;
-    line-height: 1.7 !important;
-  }
-
-  .hero-hook {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-  }
-
-  .hero-actions {
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    gap: 10px !important;
-  }
-
-  .hero-actions .btn {
-    width: auto !important;
-    min-width: 160px !important;
-    text-align: center !important;
-  }
-
-  .ultra-panel h2,
-  .technology-text h2,
-  .app-text h2,
-  .section-heading h2,
-  .urgency-box h2,
-  .cta-left h2 {
-    font-size: 28px !important;
-    line-height: 1.1 !important;
+  .premium-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
   }
 
   .premium-plan {
     padding: 20px 16px !important;
   }
 
-  .premium-plan h3,
-  .product-card h3,
-  .service-card h3,
-  .vehicle-type-content h3,
-  .comparison-header h3,
-  .public-sector-head h3 {
-    font-size: 21px !important;
-  }
-
   .premium-plan .price {
     font-size: 26px !important;
   }
 
-  .vehicle-type-card img {
-    height: 230px !important;
+  /* TABLA */
+  .comparison-row {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr !important;
+    gap: 8px !important;
   }
 
-  .dashboard-map {
-    min-height: 270px !important;
+  .comparison-row > div {
+    font-size: 12px !important;
+    padding: 12px !important;
   }
 
-  .phone-frame {
-    max-width: 315px !important;
+  /* SECTOR PÚBLICO */
+  .public-sector-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
   }
 
-  .phone-screen {
-    min-height: 520px !important;
+  /* POR QUÉ ELEGIRNOS */
+  .why-choose-intro,
+  .why-choose-proof {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
   }
 
+  /* TESTIMONIOS */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  /* CTA */
+  .ultra-cta-box {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    padding: 24px 20px !important;
+  }
+
+  /* FOOTER */
   .footer {
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -4067,19 +4082,19 @@ body::before {
 }
 
 @media (max-width: 520px) {
-  .services-grid,
-  .products-grid,
-  .testimonials-grid,
-  .why-choose-intro,
-  .why-choose-proof,
-  .pricing-intro-bar,
-  .public-sector-grid,
-  .stats-expert,
-  .trust-bar,
-  .premium-pricing-grid,
   .hero-features,
   .panel-grid,
   .hero-proof-mini,
+  .services-grid,
+  .stats-expert,
+  .trust-bar,
+  .products-grid,
+  .pricing-intro-bar,
+  .premium-pricing-grid,
+  .public-sector-grid,
+  .why-choose-intro,
+  .why-choose-proof,
+  .testimonials-grid,
   .dashboard-stats,
   .phone-info-grid {
     grid-template-columns: 1fr !important;
@@ -4087,10 +4102,6 @@ body::before {
 
   .comparison-row {
     grid-template-columns: 1fr !important;
-  }
-
-  .comparison-row > div:first-child {
-    font-weight: 700 !important;
   }
 
   .hero-text h1 {
