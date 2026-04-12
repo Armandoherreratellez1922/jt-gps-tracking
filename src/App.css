@@ -3903,18 +3903,17 @@ body::before {
   }
 }
 @media (max-width: 768px) {
-  body {
-    outline: 6px solid red !important;
-  }
-
-  .services-grid,
-  .products-grid,
-  .testimonials-grid,
-  .premium-pricing-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  .topbar {
+    background: red !important;
   }
 
   .hero-text h1 {
+    color: yellow !important;
     font-size: 20px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
   }
 }
