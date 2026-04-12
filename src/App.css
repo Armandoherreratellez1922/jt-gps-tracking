@@ -3214,3 +3214,430 @@ body::before {
     0 18px 36px rgba(255, 106, 0, 0.28),
     0 0 18px rgba(255, 106, 0, 0.12);
 }
+/* =========================
+   MOBILE RESCUE LAYER
+   ========================= */
+
+@media (max-width: 768px) {
+  .site {
+    overflow-x: hidden;
+  }
+
+  .topbar {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: none;
+    padding: 12px 14px;
+    border-radius: 16px;
+    gap: 12px;
+  }
+
+  .brand-row {
+    max-width: 100%;
+    padding: 6px 10px;
+    gap: 10px;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .brand-subtitle {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    margin-top: 2px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 92px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    min-height: auto;
+    padding: 44px 20px 36px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .pill {
+    font-size: 12px;
+    padding: 7px 12px;
+    margin-bottom: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    line-height: 1.08;
+    word-break: break-word;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 16px;
+  }
+
+  .hero-hook {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .hero-actions .btn,
+  .btn-block,
+  .smart-cta-button,
+  .cta-main-btn,
+  .public-sector-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-trust-row {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .hero-trust-row span {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .hero-features,
+  .panel-grid,
+  .hero-proof-mini,
+  .services-grid,
+  .stats-expert,
+  .trust-bar,
+  .vehicle-types-grid,
+  .technology-layout,
+  .dashboard-stats,
+  .app-preview,
+  .products-grid,
+  .pricing-intro-bar,
+  .premium-pricing-grid,
+  .public-sector-grid,
+  .why-choose-intro,
+  .why-choose-proof,
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feature-card,
+  .service-card,
+  .product-card,
+  .testimonial-card,
+  .faq-item,
+  .technology-benefit,
+  .app-benefit-card,
+  .why-proof-card,
+  .why-choose-intro-box,
+  .pricing-intro-item,
+  .public-sector-item,
+  .dashboard-mini-card {
+    padding: 18px;
+  }
+
+  .hero-panel,
+  .phone-mockup {
+    width: 100%;
+  }
+
+  .panel-box {
+    max-width: 100%;
+    padding: 22px 18px;
+    border-radius: 24px;
+  }
+
+  .ultra-panel h2,
+  .technology-text h2,
+  .app-text h2,
+  .section-heading h2,
+  .urgency-box h2 {
+    font-size: 28px;
+    line-height: 1.12;
+  }
+
+  .section,
+  .technology-premium,
+  .app-preview,
+  .urgency-section,
+  .footer,
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .section-heading p,
+  .technology-text p,
+  .app-text p,
+  .urgency-box p,
+  .public-sector-box p,
+  .comparison-header p,
+  .premium-testimonial p,
+  .faq-item p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .stats-expert {
+    padding: 8px 20px 40px;
+    gap: 12px;
+  }
+
+  .trust-bar {
+    padding: 0 20px 36px;
+    gap: 12px;
+  }
+
+  .vehicle-type-card img {
+    height: 220px;
+  }
+
+  .technology-premium {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .technology-dashboard {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .dashboard-map {
+    min-height: 260px;
+    border-radius: 18px;
+  }
+
+  .dashboard-header {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .dashboard-status {
+    padding: 5px 8px;
+    font-size: 11px;
+  }
+
+  .dashboard-map-bottom {
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .map-bottom-header {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .mini-map {
+    min-height: 110px;
+  }
+
+  .dashboard-stats {
+    gap: 10px;
+  }
+
+  .phone-frame {
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .phone-screen {
+    min-height: 520px;
+  }
+
+  .phone-map-area {
+    height: 220px;
+  }
+
+  .phone-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-info-card.full {
+    grid-column: auto;
+  }
+
+  .premium-plan {
+    padding: 22px 18px;
+    border-radius: 24px;
+  }
+
+  .premium-plan h3,
+  .product-card h3,
+  .service-card h3,
+  .vehicle-type-content h3,
+  .comparison-header h3,
+  .public-sector-head h3 {
+    font-size: 22px;
+  }
+
+  .premium-plan .price {
+    font-size: 28px;
+  }
+
+  .pricing-badge {
+    top: 12px;
+    right: 12px;
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .comparison-table {
+    gap: 12px;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr !important;
+    gap: 8px;
+  }
+
+  .comparison-row > div {
+    text-align: left;
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .comparison-row > div:first-child {
+    font-weight: 700;
+  }
+
+  .ultra-cta-box {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 22px 18px;
+    border-radius: 24px;
+  }
+
+  .cta-left h2 {
+    font-size: 24px;
+  }
+
+  .cta-benefits {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-benefits span {
+    width: 100%;
+  }
+
+  .cta-extra {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .smart-cta-bar {
+    width: calc(100% - 16px);
+    bottom: 10px;
+  }
+
+  .smart-cta-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .smart-cta-text strong {
+    font-size: 14px;
+  }
+
+  .smart-cta-text span {
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-top: 56px;
+    padding-top: 34px;
+    padding-bottom: 24px;
+    gap: 24px;
+    border-radius: 24px 24px 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-brand {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  .footer-logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .footer-brand h3 {
+    font-size: 18px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+  }
+
+  .footer-links > div {
+    min-width: 0;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    padding-top: 14px;
+    padding-bottom: 34px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .footer-note {
+    font-size: 11px !important;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 84px;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+}
