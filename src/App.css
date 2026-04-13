@@ -4103,11 +4103,11 @@ body::before {
   .hero-proof-mini,
   .dashboard-stats {
     display: grid !important;
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .comparison-row {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .hero-text h1 {
@@ -4258,11 +4258,11 @@ body::before {
   .dashboard-stats,
   .phone-info-grid {
     display: grid !important;
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .comparison-row {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .hero-actions {
